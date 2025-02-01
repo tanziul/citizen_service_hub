@@ -1,0 +1,95 @@
+/* Field Worker Registration Page Styles */
+.fieldworker-reg .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.fieldworker-reg .form-section {
+    max-width: 500px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: hsl(213, 29%, 30%);
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.fieldworker-reg h1 {
+    text-align: center;
+    color: rgb(243, 192, 8);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    color: #ffffff;
+    padding: 5 px;
+}
+
+
+.fieldworker-reg input[type="text"],
+.fieldworker-reg input[type="email"],
+.fieldworker-reg input[type="tel"],
+.fieldworker-reg input[type="password"],
+.fieldworker-reg textarea {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    transition: border-color 0.3s ease;
+}
+
+.fieldworker-reg input:focus,
+.fieldworker-reg textarea:focus {
+    border-color: #ff9f00;
+    box-shadow: 0 0 8px rgba(255, 159, 0, 0.5);
+}
+
+.fieldworker-reg .button-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fieldworker-reg input[type="submit"],
+.fieldworker-reg input[type="reset"] {
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    background-color: hwb(49 2% 27%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fieldworker-reg input[type="submit"]:hover,
+.fieldworker-reg input[type="reset"]:hover {
+    background-color: #e68900;
+}
+
+.login-link {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login-link a {
+    color: #ff9f00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

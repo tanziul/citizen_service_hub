@@ -1,0 +1,296 @@
+/*---------------------- Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, hsl(185, 12%, 60%), hsl(185, 12%, 60%));
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #2d3e50;
+    color: white;
+}
+
+.logo-img {
+    max-height: 50px;
+    width: auto;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    color: rgba(255, 255, 255, 0.91);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ff9f00; /* Highlight on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path/to/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(133, 193, 233 );
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #6e4a0f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #e68900;
+}
+
+/* Featured Services Section */
+.featured-services {
+    background-color: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: hsl(188, 33%, 60%);
+    padding: 1.5rem;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-secondary {
+    background-color: #2d3e50;
+    color: white;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #1f2a36;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+/*---------------------------------Signup Options Section ----------------------------------*/
+.signup-options {
+    text-align: center;
+    margin: 5rem auto;
+    padding: 3rem;
+    flex-direction: column;
+    background: linear-gradient(to right, #4a5f73, #2d3e50); /* Gradient background for the section */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.signup-options h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ff9f00; /* Warm, eye-catching color for the title */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.options-container .btn-primary {
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    background-color: #6e4a0f;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+}
+
+.options-container .btn-primary:hover {
+    background-color: #e68900;
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.options-container .btn-primary:active {
+    transform: translateY(1px); /* Slight press effect when clicked */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .signup-options {
+        padding: 2rem;
+    }
+
+    .options-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .options-container .btn-primary {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+}
+
+/*------------------------ Login Form Styles -------------------------*/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: calc(100vh - 160px); /* Adjust for header/footer height */
+}
+
+.form-card {
+    max-width: 400px;
+    width: 100%;
+    background: #2d3e50;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #ffffff;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff9f00;
+    letter-spacing: 1px;
+}
+
+.form-subtitle {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    width: 50%;
+    text-align: center;
+    padding: 12px;
+    background-color: #6e4a0f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e68900;
+}
+
+.form-footer {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.link {
+    color: #ff9f00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

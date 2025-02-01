@@ -1,0 +1,270 @@
+/*------------------------ Global Styles -------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, hsl(185, 12%, 60%), #4a5f73);
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+}
+
+h1, h2, h3 {
+    color: #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Form Section */
+.form-section {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3b4d63; /* Darker background for the form */
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.form-section h1 {
+    text-align: center;
+    color: rgb(243, 192, 8); /* Bright color for titles */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff9f00;
+    box-shadow: 0 0 8px rgba(255, 159, 0, 0.5);
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Buttons */
+.button-container {
+    text-align: center;
+    padding-top: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    background-color: hsl(188, 36%, 62%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #e68900;
+}
+
+/* Error Messages */
+p[id$="Error"] {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+}
+
+/* Log in Link */
+.login-link {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login-link a {
+    color: #ff9f00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .form-section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+}
+
+/*---------------------- Dashboard Layout ----------------------*/
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #3b4d63;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.sidebar-menu a {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1rem;
+    background-color: #4a5f73;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu a:hover {
+    background-color: hsl(54, 77%, 43%);
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Main Content */
+.content {
+
+    flex-grow: 1;
+    padding: 20px;
+    background-color: hsl(191, 17%, 60%);
+}
+
+/* Header */
+.dashboard-header {
+    background-color: #d5ca30;
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    color: hsl(213, 25%, 31%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Citizen Information Section */
+.citizen-info {
+    text-align: center;
+    
+    background-color: hsl(205, 51%, 18%); /* Light background for better contrast */
+    width: 50%;
+    
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+.citizen-info h2 {
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 100%); /* Darker heading color for better contrast */
+}
+
+.citizen-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.citizen-info td {
+    padding: 15px 15px;
+    border-bottom: 1px solid #e0e0e0; /* Subtle border for table rows */
+    font-size: 1rem;
+    color: hsl(0, 0%, 93%); /* Neutral color for text */
+}
+
+.citizen-info td:first-child {
+    font-weight: bold;
+    width: 30%;
+    color: hsl(0, 0%, 90%); /* Stronger color for labels */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
